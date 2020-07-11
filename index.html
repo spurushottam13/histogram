@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <title>Assignment</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="loading-area">
+        <div class="button" id="fetch-btn">
+            Fetch API Data
+        </div>
+        <div class="info">
+            This app does not uses any third party lib of graph, it use plain javascript and canvas to generate graph
+            <br>
+            <div class="info-badge">
+                Interview Assignment: Purushottam
+            </div>
+        </div>
+    </div>
+    <div id="play-area">
+        <div class="control-bars">
+            <div class="inline">
+                <div class="action-btn" id="show-page">Page</div>
+                <div class="action-btn" id="show-post">Post</div>
+            </div>
+            <div class="inline range-wrapper">
+                <div class="variance-display">0-200</div>
+                <input type="range" id="change-range" name="vol" min="0" max="10">
+                <div id="update-plot">Plot</div>
+            </div>
+        </div>
+        <div id="graph-host"></div>
+        <div>
+            Source code: @<a  target="_blank" href="https://github.com/spurushottam13/histogram">spurushottam13</a>
+        </div>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>

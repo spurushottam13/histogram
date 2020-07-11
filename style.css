@@ -1,0 +1,131 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #EFF1F6;
+    color: #585B57;
+    font-weight: 500;
+    margin: 0px;
+}
+
+#loading-area {
+    top: 50%;
+    width: 70%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.button {
+    background: #488EFF;
+    width: fit-content;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 4px;
+    min-width: 160px;
+    font-weight: 600;
+    margin: auto;
+    cursor: pointer;
+    box-shadow: 0 2px 20px 7px rgba(0, 0, 0, .05);
+}
+
+#loading-area .info {
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+#play-area{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.control-bars{
+    background: white;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#graph-host{    
+    width: fit-content;
+    max-width: 100%;
+    background: white;
+    overflow: auto;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 2px 20px 7px rgba(0,0,0,.05);
+}
+
+#graph-area{
+    background: #efefef;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.inline{
+    display: flex;
+}
+
+.action-btn{
+    margin: 5px;
+    border: 1px solid #a2a2a2;
+    padding: 2px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.range-wrapper{
+    margin: 5px;
+    border: 1px solid #a2a2a2;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.action-btn:hover{
+    color: white;
+    background: #488EFF;
+    border: 1px solid #488EFF;
+}
+
+.active{
+    color: white;
+    background: #488EFF;
+    border: 1px solid #488EFF;
+}
+
+.variance-display{
+    border-right: 1px solid;
+    margin-right: 10px;
+    padding: 2px 12px;
+    font-weight: 600;
+}
+
+#update-plot{
+    padding: 2px 8px;
+    border-left: 1px solid;color: white;
+    background: #488EFF;
+}
+
+#update-plot:hover{
+    background: #3b76d6;
+}
+
+.info-badge{
+    background: #d6d1d1;
+    width: fit-content;
+    margin: auto;
+    margin-top: 15px;
+    padding: 4px 16px;
+    border-radius: 30px;
+}
