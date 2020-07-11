@@ -16,7 +16,17 @@ const playArea = document.getElementById('play-area')
 const loadingArea = document.getElementById('loading-area')
 const rangeEL = document.getElementById('change-range')
 const updatePlot = document.getElementById('update-plot')
+const download = document.getElementById('download-png')
 
+
+download.onclick = _ =>  {
+    const canvas = document.getElementById('graph-area')
+    const image = canvas.toDataURL("image/png", 1.0).replace("image/png", "image/octet-stream");
+    const link = document.createElement('a');
+    link.download = "graph.png";
+    link.href = image;
+    link.click();
+}
 updatePlot.onclick = plotData
 
 postBtn.addEventListener('click', ({target}) => {

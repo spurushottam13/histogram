@@ -11,7 +11,7 @@
     |Range|Count|
     |-----|-----|
     |0-200| 42  |
-    |200-600| 42|
+    |200-600| 24|
 
 * Store.js   
     Store all the value in key/value system, so that every module can access store.
